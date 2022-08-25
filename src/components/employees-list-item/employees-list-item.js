@@ -18,7 +18,7 @@ const EmployeesListItem = () => {
                 <i className="fas fa-star"></i>
             </div>
         </li>
-    )
+    );
 }
 
 export default EmployeesListItem;
