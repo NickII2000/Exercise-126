@@ -11,8 +11,8 @@ function App() {
 
             <div className="search-panel">
                 <SearchPanel />
+                <AppFilter />
             </div>
-            <AppFilter />
         </div>
     );
 }
