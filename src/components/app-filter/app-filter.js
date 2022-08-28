@@ -11,7 +11,7 @@ const AppFilter = () => {
             <button
                 className="btn btn-outline-light"
                 type="button">
-                На повышение
+                На повышение !!!
             </button>
             <button
                 className="btn btn-outline-light"
