@@ -9,7 +9,6 @@ const Employeeslist = () => {
             <EmployeesListItem />
             <EmployeesListItem />
             <EmployeesListItem />
-            <EmployeesListItem />
         </ul>
     );
 }
