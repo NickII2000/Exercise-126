@@ -17,21 +17,20 @@ function WhoAmI({ name, surname, link }) {
 
 function App() {
     return (
-        <div className="App">
+        <div className="app">
             <WhoAmI name={() => { return 'John'; }} surname="Smith" link="ok.ru" />
             <WhoAmI name={() => { return 'Alex'; }} surname="Shepard" link="vk.ru" />
+
+            <AppInfo />
+
+            <div className="search-panel">
+                <SearchPanel />
+                <AppFilter />
+            </div>
+
+            <Employeeslist />
+            <EmployeesAddForm />
         </div>
-        // <div className="app">
-        //     <AppInfo />
-
-        //     <div className="search-panel">
-        //         <SearchPanel />
-        //         <AppFilter />
-        //     </div>
-
-        //     <Employeeslist />
-        //     <EmployeesAddForm />
-        // </div>
     );
 }
 
