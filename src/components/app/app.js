@@ -18,8 +18,8 @@ function WhoAmI({ name, surname, link }) {
 function App() {
     return (
         <div className="App">
-            <WhoAmI name={{ firstName: 'John' }} surname="Smith" link="ok.ru" />
-            <WhoAmI name={{ firstName: "Alex" }} surname="Shepard" link="vk.ru" />
+            <WhoAmI name={() => 'John'} surname="Smith" link="ok.ru" />
+            <WhoAmI name={() => 'Alex'} surname="Shepard" link="vk.ru" />
         </div>
         // <div className="app">
         //     <AppInfo />
