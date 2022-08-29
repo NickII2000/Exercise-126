@@ -19,6 +19,7 @@ function App() {
     return (
         <div className="App">
             <WhoAmI name="John" surname="Smith" link="ok.ru" />
+            <WhoAmI name="Alex" surname="Shepard" link="vk.ru" />
         </div>
         // <div className="app">
         //     <AppInfo />
