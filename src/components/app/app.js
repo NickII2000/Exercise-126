@@ -9,7 +9,7 @@ import './app.css';
 function WhoAmI({ name, surname, link }) {
     return (
         <div>
-            <h1>My name is {name}, surname - {surname}</h1>
+            <h1>My name is {name.firstName}, surname - {surname}</h1>
             <a href={link}>My profile</a>
         </div>
     );
@@ -18,8 +18,8 @@ function WhoAmI({ name, surname, link }) {
 function App() {
     return (
         <div className="App">
-            <WhoAmI name="John" surname="Smith" link="ok.ru" />
-            <WhoAmI name="Alex" surname="Shepard" link="vk.ru" />
+            <WhoAmI name={{ firstName: 'John' }} surname="Smith" link="ok.ru" />
+            <WhoAmI name={{ firstName: "Alex" }} surname="Shepard" link="vk.ru" />
         </div>
         // <div className="app">
         //     <AppInfo />
