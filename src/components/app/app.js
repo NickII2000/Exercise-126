@@ -18,13 +18,13 @@ function WhoAmI({ name, surname, link }) {
 function App() {
     return (
         <div className="App">
-            <WhoAmI name={() => 'John'} surname="Smith" link="ok.ru" />
-            <WhoAmI name={() => 'Alex'} surname="Shepard" link="vk.ru" />
+            <WhoAmI name={() => return { 'John'} } surname="Smith" link="ok.ru" />
+            <WhoAmI name={() => return { 'Alex'} } surname="Shepard" link="vk.ru" />
         </div>
         // <div className="app">
-        //     <AppInfo />
+        //     <AppInfo />return {
 
-        //     <div className="search-panel">
+    }    //     <div className="search-panel">
         //         <SearchPanel />
         //         <AppFilter />
         //     </div>
