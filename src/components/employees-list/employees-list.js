@@ -6,6 +6,10 @@ const Employeeslist = ({ data }) => {
 
     const elements = data.map(item => {
         const { id, ...itemProps } = item;
+
+        console.log(id);
+        console.log(itemProps);
+
         return (
             <EmployeesListItem key={id} {...itemProps} />
         );
