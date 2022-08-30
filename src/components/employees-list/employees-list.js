@@ -11,7 +11,7 @@ const Employeeslist = ({ data }) => {
         );
     });
 
-    // console.log(elements);
+    console.log(elements);
 
     return (
         <ul className="app-list list-group">
