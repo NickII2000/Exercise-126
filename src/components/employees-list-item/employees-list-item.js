@@ -2,10 +2,10 @@ import './employees-list-item.css';
 
 const EmployeesListItem = ({ name, salary, increase }) => {
 
-    // let className = 'list-group-item d-flex justify-content-between';
-    // if (increase) {
-    // className += ' increase';
-    // }
+    let className = 'list-group-item d-flex justify-content-between';
+    if (increase) {
+        className += ' increase';
+    }
 
     return (
         <li className={className}>
