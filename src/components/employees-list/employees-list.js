@@ -9,7 +9,7 @@ const Employeeslist = ({ data }) => {
 
         console.log(`id = ${id}`);
         console.log(itemProps);
-        // console.log(...itemProps);
+        console.log({ ...itemProps });
 
         return (
             <EmployeesListItem key={id} {...itemProps} />
