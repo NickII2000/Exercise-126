@@ -12,7 +12,7 @@ const Employeeslist = ({ data }) => {
         console.log({ ...itemProps });
 
         return (
-            <EmployeesListItem key={id} {[...itemProps]} />
+            <EmployeesListItem key={id} {...itemProps} />
         );
     });
 
