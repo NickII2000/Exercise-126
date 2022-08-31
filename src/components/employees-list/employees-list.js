@@ -8,7 +8,7 @@ const Employeeslist = ({ data }) => {
         const { id, ...itemProps } = item;
 
         console.log(id);
-        console.log(itemProps);
+        console.log(id + itemProps);
 
         return (
             <EmployeesListItem key={id} {...itemProps} />
