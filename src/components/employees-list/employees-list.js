@@ -12,17 +12,17 @@ const Employeeslist = ({ data }) => {
         console.log({ ...itemProps });
 
         return (
-            <EmployeesListItem key={id} {...itemProps} />
-        );
-    });
-
-    console.log(elements);
-
-    return (
-        <ul className="app-list list-group">
-            {elements}
-        </ul>
+            <EmployeesListItem key={id} [...itemProps]/>
     );
+});
+
+console.log(elements);
+
+return (
+    <ul className="app-list list-group">
+        {elements}
+    </ul>
+);
 }
 
 export default Employeeslist;
