@@ -20,7 +20,7 @@ class WhoAmI extends Component {
         const { name, surname, link } = this.props;
         return (
             <div>
-                <h1>My name is {name}, surname - {surname}</h1>
+                <h1>My name is {name}, surname - {surname}, age - {this.state.years}</h1>
                 <a href={link}>My profile</a>
             </div >
         );
