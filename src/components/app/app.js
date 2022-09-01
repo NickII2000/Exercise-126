@@ -6,26 +6,50 @@ import EmployeesAddForm from '../employees-add-form/employees-add-form';
 
 import './app.css';
 
-function App() {
 
-    const data = [
-        { name: "John C.", salary: 80000, increase: false, id: 1 },
-        { name: "Alex M.", salary: 100000, increase: true, id: 2 },
-        { name: "Carl W.", salary: 120000, increase: false, id: 3 }
-    ];
+import { Component } from 'react';
+
+class WhoAmI extends Component {
+    render() {
+        return (
+            <div>
+                <h1>My name is {name()}, surname - {surname}</h1>
+                <a href={link}>My profile</a>
+            </div >
+        );
+    }
+}
+
+function App() {
     return (
         <div className="app">
-            <AppInfo />
-
-            <div className="search-panel">
-                <SearchPanel />
-                <AppFilter />
-            </div>
-
-            <Employeeslist data={data} />
-            <EmployeesAddForm />
+            <WhoAmI name={() => { return 'John'; }} surname="Smith" link="ok.ru" />
+            <WhoAmI name={() => { return 'Alex'; }} surname="Shepard" link="vk.ru" />
         </div>
+
     );
 }
+
+// function App() {
+
+//     const data = [
+//         { name: "John C.", salary: 80000, increase: false, id: 1 },
+//         { name: "Alex M.", salary: 100000, increase: true, id: 2 },
+//         { name: "Carl W.", salary: 120000, increase: false, id: 3 }
+//     ];
+//     return (
+//         <div className="app">
+//             <AppInfo />
+
+//             <div className="search-panel">
+//                 <SearchPanel />
+//                 <AppFilter />
+//             </div>
+
+//             <Employeeslist data={data} />
+//             <EmployeesAddForm />
+//         </div>
+//     );
+// }
 
 export default App;
