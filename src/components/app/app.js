@@ -12,6 +12,9 @@ import { Component } from 'react';
 class WhoAmI extends Component {
     constructor(props) {
         super(props);
+        this.state = {
+            years: 27,
+        }
     }
     render() {
         const { name, surname, link } = this.props;
