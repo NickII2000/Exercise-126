@@ -10,9 +10,9 @@ import './app.css';
 import { Component } from 'react';
 
 class WhoAmI extends Component {
-    constructor(props) {
-        super(props);
-    }
+    // constructor(props) {
+    //     super(props);
+    // }
     render() {
         const { name, surname, link } = this.props;
         return (
