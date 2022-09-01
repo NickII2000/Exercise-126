@@ -14,7 +14,7 @@ class WhoAmI extends Component {
         super(props);
         this.state = {
             years: 27,
-            text: '+ - + - +',
+            text: 'Нажато: ',
         }
     }
 
@@ -25,6 +25,7 @@ class WhoAmI extends Component {
         // });
         this.setState(state => ({
             years: this.state.years + 1,
+            text: this.state.text + '+ ',
         }));
     }
 
