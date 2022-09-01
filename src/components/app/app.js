@@ -10,10 +10,14 @@ import './app.css';
 import { Component } from 'react';
 
 class WhoAmI extends Component {
+    constructor(props) {
+        super(props);
+    }
     render() {
+        const { name, surname, link } = this.props;
         return (
             <div>
-                <h1>My name is {name()}, surname - {surname}</h1>
+                <h1>My name is {name}, surname - {surname}</h1>
                 <a href={link}>My profile</a>
             </div >
         );
@@ -23,8 +27,8 @@ class WhoAmI extends Component {
 function App() {
     return (
         <div className="app">
-            <WhoAmI name={() => { return 'John'; }} surname="Smith" link="ok.ru" />
-            <WhoAmI name={() => { return 'Alex'; }} surname="Shepard" link="vk.ru" />
+            <WhoAmI name='John' surname="Smith" link="ok.ru" />
+            <WhoAmI name='Alex' surname="Shepard" link="vk.ru" />
         </div>
 
     );
