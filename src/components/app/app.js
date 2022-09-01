@@ -16,10 +16,16 @@ class WhoAmI extends Component {
             years: 27,
         }
     }
+
+    nextYear = () => {
+        console.log('+++');
+    }
+
     render() {
         const { name, surname, link } = this.props;
         return (
             <div>
+                <button onClick={this.nextYear}>+++</button>
                 <h1>My name is {name}, surname - {surname}, age - {this.state.years}</h1>
                 <a href={link}>My profile</a>
             </div >
