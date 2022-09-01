@@ -14,7 +14,7 @@ class WhoAmI extends Component {
         super(props);
         this.state = {
             years: 27,
-            text: '+  +  +',
+            text: '+ - + - +',
         }
     }
 
