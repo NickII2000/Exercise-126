@@ -24,8 +24,8 @@ class WhoAmI extends Component {
         //     years: this.state.years + 1,
         // });
         this.setState(state => ({
-            years: this.state.years + 1,
-            text: this.state.text + '+ ',
+            // years: this.state.years + 1,
+            // text: this.state.text + '+ ',
         }));
     }
 
