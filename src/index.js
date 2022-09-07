@@ -6,6 +6,6 @@ import App from './components/app/app';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App counter={49} />
+    <App counter={25} />
   </React.StrictMode>
 );
