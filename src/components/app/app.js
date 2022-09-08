@@ -17,7 +17,7 @@ class App extends Component {
     }
 
     inc = () => {
-        if (this.state.counter < 50) {
+        if (this.state.counter < 10) {
             this.setState(state => ({
                 counter: state.counter + 5,
             }));
@@ -25,7 +25,7 @@ class App extends Component {
     }
 
     dec = () => {
-        if (this.state.counter > -50) {
+        if (this.state.counter > -10) {
             this.setState(state => ({
                 counter: state.counter - 1,
             }));
