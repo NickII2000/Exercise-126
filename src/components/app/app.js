@@ -34,7 +34,7 @@ class App extends Component {
 
     ran = () => {
         this.setState(state => ({
-            counter: Math.ceil(Math.random() * 100) - 50,
+            counter: Math.ceil(Math.random() * 20) - 10,
         }));
     }
 
