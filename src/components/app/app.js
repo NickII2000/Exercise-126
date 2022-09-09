@@ -54,9 +54,9 @@ class App extends Component {
                 <div class="counter">{this.state.counter}</div>
                 <div class="controls">
                     <button onClick={this.inc}>INC</button>
-                    {/* <button onClick={this.dec}>DEC</button> */}
-                    {/* <button onClick={this.ran}>RND</button> */}
-                    {/* <button onClick={this.res}>RESET</button> */}
+                    <button onClick={this.dec}>DEC</button>
+                    <button onClick={this.ran}>RND</button>
+                    <button onClick={this.res}>RESET</button>
                 </div>
             </div>
         )
