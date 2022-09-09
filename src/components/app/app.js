@@ -56,7 +56,7 @@ class App extends Component {
                     <button onClick={this.inc}>INC</button>
                     <button onClick={this.dec}>DEC</button>
                     <button onClick={this.ran}>RND</button>
-                    <button onClick={this.res}>RESET</button>
+                    {/* <button onClick={this.res}>RESET</button> */}
                 </div>
             </div>
         )
