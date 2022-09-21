@@ -19,7 +19,7 @@ class App extends Component {
     inc = () => {
         if (this.state.counter < 10) {
             this.setState(state => ({
-                counter: state.counter + 1,
+                counter: state.counter + 2,
             }));
         }
     }
