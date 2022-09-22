@@ -27,7 +27,7 @@ class App extends Component {
     dec = () => {
         if (this.state.counter > -10) {
             this.setState(state => ({
-                counter: state.counter - 1,
+                counter: state.counter - 2,
             }));
         }
     }
