@@ -1,16 +1,10 @@
 import './employees-list-item.css';
 
-const EmployeesListItem = ({ name, salary, increase }) => {
-
-    let className = 'list-group-item d-flex justify-content-between';
-    if (increase) {
-        className += ' increase';
-    }
-
+const EmployeesListItem = () => {
     return (
-        <li className={className}>
-            <span className="list-group-item-label">{name}</span>
-            <input type="text" className="list-group-item-input" defaultValue={salary + ' руб.'} />
+        <li className="list-group-item d-flex justify-content-between">
+            <span className="list-group-item-label">John Smith</span>
+            <input type="text" className="list-group-item-input" defaultValue="100 000 руб." />
             <div className='d-flex justify-content-center align-items-center'>
                 <button type="button"
                     className="btn-cookie btn-sm ">
