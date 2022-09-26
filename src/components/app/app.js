@@ -5,14 +5,14 @@ import Employeeslist from '../employees-list/employees-list';
 import EmployeesAddForm from '../employees-add-form/employees-add-form';
 
 import './app.css';
-import { constants } from 'fs/promises';
+// import { constants } from 'fs/promises';
 
 function App() {
 
     const data = [
-        { name: 'John C.', salary: 800 },
-        { name: 'Alex M.', salary: 3000 },
-        { name: 'Carl W.', salary: 5000 }
+        { name: 'John C.', salary: 800, increase: true },
+        { name: 'Alex M.', salary: 3000, increase: false },
+        { name: 'Carl W.', salary: 5000, increase: false },
     ];
 
     return (
@@ -24,7 +24,7 @@ function App() {
                 <AppFilter />
             </div>
 
-            <Employeeslist />
+            <Employeeslist data={data} />
             <EmployeesAddForm />
         </div>
     );
