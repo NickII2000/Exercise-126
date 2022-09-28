@@ -7,15 +7,15 @@ const Employeeslist = ({ data }) => {
     const elements = data.map(item => {
         const { id, ...itemProps } = item;
 
-        console.log(id);
+        console.log(`id = ${id}`);
         console.log(itemProps);
+        console.log({ ...itemProps });
 
         return (
             <EmployeesListItem key={id} {...itemProps} />
         );
     });
 
-    console.log('==============================');
     console.log(elements);
 
     return (
