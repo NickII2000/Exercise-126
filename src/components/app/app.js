@@ -50,9 +50,9 @@ class App extends Component {
     render() {
         const { counter } = this.props;
         return (
-            <div class="app" id="app">
-                <div class="counter">{this.state.counter}</div>
-                <div class="controls">
+            <div className="app" id="app">
+                <div className="counter">{this.state.counter}</div>
+                <div className="controls">
                     <button onClick={this.inc}>INC</button>
                     <button onClick={this.dec}>DEC</button>
                     <button onClick={this.ran}>RND</button>
