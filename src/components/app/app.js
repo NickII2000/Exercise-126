@@ -32,7 +32,7 @@ class WhoAmI extends Component {
 
     commitInputChanges = (e) => {
         // console.log(e);
-        console.log(e.target.value);
+        // console.log(e.target.value);
         this.setState({
             position: e.target.value
         })
@@ -40,12 +40,13 @@ class WhoAmI extends Component {
 
     render() {
         const { name, surname, link } = this.props;
+        const { years, text, position } = this.state;
         return (
             <div>
-                <button onClick={this.nextYear}>{this.state.text}</button>
+                <button onClick={this.nextYear}>{text}</button>
                 <h1>My name is {name}, surname - {surname},
-                    age - {this.state.years},
-                    position = {this.state.position}</h1>
+                    age - {years},
+                    position = {position}</h1>
                 <a href={link}>My profile</a>
                 <form>
                     <span>Введите должность</span>
