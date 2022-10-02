@@ -15,6 +15,7 @@ class WhoAmI extends Component {
         this.state = {
             years: 27,
             text: 'Нажато: ',
+            position: '',
         }
     }
 
@@ -30,8 +31,11 @@ class WhoAmI extends Component {
     }
 
     commitInputChanges = (e) => {
-        console.log(e);
+        // console.log(e);
         console.log(e.target.value);
+        this.setState({
+            position: e.target.value
+        })
     }
 
     render() {
@@ -39,7 +43,9 @@ class WhoAmI extends Component {
         return (
             <div>
                 <button onClick={this.nextYear}>{this.state.text}</button>
-                <h1>My name is {name}, surname - {surname}, age - {this.state.years}</h1>
+                <h1>My name is {name}, surname - {surname},
+                    age - {this.state.years},
+                    position = {this.state.position}</h1>
                 <a href={link}>My profile</a>
                 <form>
                     <span>Введите должность</span>
