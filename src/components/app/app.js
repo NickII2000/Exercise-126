@@ -41,6 +41,9 @@ class WhoAmI extends Component {
     render() {
         const { name, surname, link } = this.props;
         const { years, text, position } = this.state;
+
+        console.log(this);
+
         return (
             <div>
                 <button onClick={this.nextYear}>{text}</button>
