@@ -30,7 +30,7 @@ class WhoAmI extends Component {
     }
 
     commitInputChanges = (e) => {
-        console.log(e);
+        console.log(e.target.value);
     }
 
     render() {
