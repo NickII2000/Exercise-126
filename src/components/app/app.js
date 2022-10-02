@@ -17,9 +17,11 @@ class WhoAmI extends Component {
             text: 'Нажато: ',
             position: '',
         }
+        this.nextYear = this.nextYear.bind(this);
     }
 
-    nextYear = () => {
+    nextYear() {
+        // nextYear = () => {
         console.log('+++');
         // this.setState({
         //     years: this.state.years + 1,
