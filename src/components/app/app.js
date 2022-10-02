@@ -29,6 +29,10 @@ class WhoAmI extends Component {
         }));
     }
 
+    commitInputChanges = (e) => {
+        console.log(e);
+    }
+
     render() {
         const { name, surname, link } = this.props;
         return (
