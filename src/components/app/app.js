@@ -20,8 +20,8 @@ class WhoAmI extends Component {
         // this.nextYear = this.nextYear.bind(this);
     }
 
-    // nextYear() {
-    nextYear = () => {
+    nextYear() {
+        // nextYear = () => {
         // console.log('+++');
         // this.setState({
         //     years: this.state.years + 1,
@@ -48,7 +48,7 @@ class WhoAmI extends Component {
 
         return (
             <div>
-                <button onClick={this.nextYear}>{text}</button>
+                <button onClick={() => this.nextYear}>{text}</button>
                 <h1>My name is {name}, surname - {surname},
                     age - {years},
                     position - {position}</h1>
