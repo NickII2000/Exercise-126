@@ -46,7 +46,7 @@ class WhoAmI extends Component {
                 <button onClick={this.nextYear}>{text}</button>
                 <h1>My name is {name}, surname - {surname},
                     age - {years},
-                    position = {position}</h1>
+                    position - {position}</h1>
                 <a href={link}>My profile</a>
                 <form>
                     <span>Введите должность</span>
