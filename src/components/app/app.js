@@ -36,6 +36,11 @@ class WhoAmI extends Component {
                 <button onClick={this.nextYear}>{this.state.text}</button>
                 <h1>My name is {name}, surname - {surname}, age - {this.state.years}</h1>
                 <a href={link}>My profile</a>
+                <form>
+                    <span>Введите должность</span>
+                    <input type="text" onChange={this.commitInputChanges} />
+
+                </form>
             </div >
         );
     }
