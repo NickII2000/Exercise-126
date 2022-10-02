@@ -6,114 +6,51 @@ import EmployeesAddForm from '../employees-add-form/employees-add-form';
 
 import './app.css';
 
+
 import { Component } from 'react';
 
-class App extends Component {
+class WhoAmI extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            counter: this.props.counter,
+            years: 27,
+            text: 'Нажато: ',
         }
     }
 
-    inc = () => {
-        if (this.state.counter < 50) {
-            this.setState(state => ({
-                counter: state.counter + 1,
-            }));
-        }
-    }
-
-    dec = () => {
-        if (this.state.counter > -50) {
-            this.setState(state => ({
-                counter: state.counter - 1,
-            }));
-        }
-    }
-
-    ran = () => {
+    nextYear = () => {
+        console.log('+++');
+        // this.setState({
+        //     years: this.state.years + 1,
+        // });
         this.setState(state => ({
-            counter: Math.ceil(Math.random() * 100) - 50,
+            years: this.state.years + 1,
+            text: this.state.text + '+ ',
         }));
     }
-
-    res = () => {
-        this.setState(state => ({
-            counter: this.props.counter,
-        }));
-    }
-
-    // Используйте только стрелочную форму методов
-    // Почему? Подробный ответ будет в следующем уроке
 
     render() {
-        const { counter } = this.props;
+        const { name, surname, link } = this.props;
         return (
-            <div className="app" id="app">
-                <div className="counter">{this.state.counter}</div>
-                <div className="controls">
-                    <button onClick={this.inc}>INC</button>
-                    <button onClick={this.dec}>DEC</button>
-                    <button onClick={this.ran}>RND</button>
-                    <button onClick={this.res}>RESET</button>
-                </div>
-            </div>
-        )
+            <div>
+                <button onClick={this.nextYear}>{this.state.text}</button>
+                <h1>My name is {name}, surname - {surname}, age - {this.state.years}</h1>
+                <a href={link}>My profile</a>
+            </div >
+        );
     }
 }
-// 1) Начальное значение счетчика должно передаваться через props
-// 2) INC и DEC увеличивают и уменьшают счетчик соответственно на 1. Без ограничений, но можете добавить границу в -50/50. По достижению границы ничего не происходит
-// 3) RND изменяет счетчик в случайное значение от -50 до 50. Конструкцию можете прогуглить за 20 секунд :) Не зависит от предыдущего состояния
-// 4) RESET сбрасывает счетчик в 0 или 
 
-//===============================================================
-// import { Component } from 'react';
+function App() {
+    return (
+        <div className="app">
+            <WhoAmI name='John' surname="Smith" link="ok.ru" />
+            <WhoAmI name='Alex' surname="Shepard" link="vk.ru" />
+        </div>
 
-// class WhoAmI extends Component {
-//     constructor(props) {
-//         super(props);
-//         this.state = {
-//             years: 27,
-//             text: 'Нажато: ',
-//         }
-//     }
+    );
+}
 
-//     nextYear = () => {
-//         console.log('+++');
-//         // this.setState({
-//         //     years: this.state.years + 1,
-//         // });
-//         this.setState(state => ({
-//             years: this.state.years + 1,
-//             text: this.state.text + '+ ',
-//         }));
-//     }
-
-//     render() {
-//         const { name, surname, link } = this.props;
-//         return (
-//             <div>
-//                 <button onClick={this.nextYear}>{this.state.text}</button>
-//                 <h1>My name is {name}, surname - {surname}, age - {this.state.years}</h1>
-//                 <a href={link}>My profile</a>
-//             </div >
-//         );
-//     }
-// }
-
-// function App() {
-//     return (
-//         <div className="app">
-//             <WhoAmI name='John' surname="Smith" link="ok.ru" />
-//             <WhoAmI name='Alex' surname="Shepard" link="vk.ru" />
-//         </div>
-
-//     );
-// }
-
-
-//===============================================================
 // function App() {
 
 //     const data = [
