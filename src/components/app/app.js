@@ -17,12 +17,12 @@ class WhoAmI extends Component {
             text: 'Нажато: ',
             position: '',
         }
-        this.nextYear = this.nextYear.bind(this);
+        // this.nextYear = this.nextYear.bind(this);
     }
 
-    nextYear() {
-        // nextYear = () => {
-        console.log('+++');
+    // nextYear() {
+    nextYear = () => {
+        // console.log('+++');
         // this.setState({
         //     years: this.state.years + 1,
         // });
