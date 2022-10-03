@@ -76,9 +76,9 @@ import './app.css';
 function App() {
 
     const data = [
-        { name: "John C.", salary: 80000, increase: false, id: 1 },
-        { name: "Alex M.", salary: 100000, increase: true, id: 2 },
-        { name: "Carl W.", salary: 120000, increase: false, id: 3 }
+        { name: "John C.", salary: 80000, id: 1 },
+        { name: "Alex M.", salary: 100000, id: 2 },
+        { name: "Carl W.", salary: 120000, id: 3 }
     ];
     return (
         <div className="app">
