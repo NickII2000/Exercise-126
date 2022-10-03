@@ -35,9 +35,9 @@ class WhoAmI extends Component {
         // console.log(e);
         // console.log(e.target.value);
         console.log(color);
-        this.setState(state => ({
-            position: e.target.value,
-        }));
+        this.setState({
+            position: e.target.value
+        });
     }
 
     render() {
