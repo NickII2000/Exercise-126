@@ -4,9 +4,9 @@ import AppFilter from '../app-filter/app-filter';
 import Employeeslist from '../employees-list/employees-list';
 import EmployeesAddForm from '../employees-add-form/employees-add-form';
 
-import { Component } from 'react';
-
 import './app.css';
+
+// import { Component } from 'react';
 
 // class WhoAmI extends Component {
 //     constructor(props) {
