@@ -22,7 +22,6 @@ const Employeeslist = ({ data, onDelete, onToggleIncrease, onToggleRise }) => {
         );
     });
 
-
     console.log(elements);
 
     return (
