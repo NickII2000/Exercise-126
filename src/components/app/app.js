@@ -93,9 +93,13 @@ class App extends Component {
         this.setState(({ data }) => {
             const index = data.findIndex(elem => elem.id === id);
             // console.log(index);
-            data.splice(index, 1);
+            // data.splice(index, 1);
+            const before = data.slice(0, index);
+            const after = data.slice(index + 1);
+            const newArr = [...before, ...after];
+
             return {
-                data: data
+                data: newArr
             };
         });
 
