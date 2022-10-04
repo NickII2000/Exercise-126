@@ -91,7 +91,7 @@ class App extends Component {
     deleteItem = (id) => {
         // console.log(id);
         this.setState(({ data }) => {
-            const index = data.findIndex(elem => elem.id === id);
+            // const index = data.findIndex(elem => elem.id === id);
             // console.log(index);
             // data.splice(index, 1);
 
@@ -100,7 +100,8 @@ class App extends Component {
             // const newArr = [...before, ...after];
 
             return {
-                data: data.filter((item, i) => i !== index)
+                // data: data.filter((item, i) => i !== index)
+                data: data.filter((item) => item.id !== id)
             };
         });
 
