@@ -82,11 +82,15 @@ class App extends Component {
             data: [
                 { name: "John C.", salary: 80000, id: 1 },
                 { name: "Alex M.", salary: 100000, id: 2 },
-                { name: "Carl W.", salary: 120000, id: 3 }
+                { name: "Carl W.", salary: 120000, id: 3 },
+                { name: "Uma T.", salary: 150000, id: 4 },
+                { name: "Ivan P.", salary: 70000, id: 5 }
             ]
         }
+        const { data } = this.state;
+        this.maxId = data.map(item => item.id).reduce((a, b) => a > b ? a : b);
+        console.log(this.maxId);
     }
-
 
     deleteItem = (id) => {
         // console.log(id);
