@@ -146,9 +146,8 @@ class App extends Component {
             data: data.map(item => {
                 if (item.id === id) {
                     return { ...item, increase: !item.increase }
-                } //else {
+                }
                 return item;
-                //}
             })
         }));
     }
@@ -159,9 +158,8 @@ class App extends Component {
             data: data.map(item => {
                 if (item.id === id) {
                     return { ...item, rise: !item.rise }
-                } //else {
+                }
                 return item;
-                //}
             })
         }));
     }
