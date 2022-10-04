@@ -140,7 +140,7 @@ class App extends Component {
                 <Employeeslist
                     data={this.state.data}
                     onDelete={this.deleteItem} />
-                <EmployeesAddForm />
+                <EmployeesAddForm onAdd={this.addItem} />
             </div>
         );
     }
