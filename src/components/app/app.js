@@ -92,6 +92,7 @@ class App extends Component {
         // console.log(this.maxId);
     }
 
+
     deleteItem = (id) => {
         // console.log(id);
         this.setState(({ data }) => {
