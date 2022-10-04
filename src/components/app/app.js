@@ -87,6 +87,16 @@ class App extends Component {
         }
     }
 
+
+    deleteItem = (id) => {
+        console.log(id);
+        this.setState(({ data }) => {
+            const index = data.findIndex(elem => elem.id === id);
+            console.log(index);
+        });
+
+    }
+
     render() {
         return (
             <div className="app" >
@@ -99,7 +109,7 @@ class App extends Component {
 
                 <Employeeslist
                     data={this.state.data}
-                    onDelete={id => console.log(id)} />
+                    onDelete={this.deleteItem} />
                 <EmployeesAddForm />
             </div>
         );

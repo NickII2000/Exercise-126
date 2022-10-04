@@ -15,7 +15,7 @@ const Employeeslist = ({ data, onDelete }) => {
             <EmployeesListItem
                 key={id}
                 {...itemProps}
-                onDelete={() => onDelete(`id#${id} - Deleted`)} />
+                onDelete={() => onDelete(id)} />
             // onDelete={() => console.log(`id#${id} - Deleted`)} />
         );
     });
