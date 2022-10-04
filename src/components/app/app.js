@@ -89,7 +89,9 @@ function App() {
                 <AppFilter />
             </div>
 
-            <Employeeslist data={data} />
+            <Employeeslist
+                data={data}
+                onDelete={id => console.log(id)} />
             <EmployeesAddForm />
         </div>
     );
