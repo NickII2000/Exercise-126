@@ -94,12 +94,13 @@ class App extends Component {
             const index = data.findIndex(elem => elem.id === id);
             // console.log(index);
             // data.splice(index, 1);
-            const before = data.slice(0, index);
-            const after = data.slice(index + 1);
-            const newArr = [...before, ...after];
+
+            // const before = data.slice(0, index);
+            // const after = data.slice(index + 1);
+            // const newArr = [...before, ...after];
 
             return {
-                data: newArr
+                data: data.filter((item, i) => i !== index)
             };
         });
 
