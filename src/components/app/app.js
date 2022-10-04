@@ -88,8 +88,8 @@ class App extends Component {
             ]
         }
         const { data } = this.state;
-        this.maxId = data.map(item => item.id).reduce((a, b) => a > b ? a : b);
-        console.log(this.maxId);
+        this.maxId = data.map(item => item.id).reduce((a, b) => a > b ? a : b) + 1;
+        // console.log(this.maxId);
     }
 
     deleteItem = (id) => {
@@ -109,6 +109,22 @@ class App extends Component {
             };
         });
 
+    }
+
+    // Да, пока могут добавляться пустые пользователи. Мы это еще исправим
+    addItem = (name, salary) => {
+        const newItem = {
+            name,
+            salary,
+            increase: false,
+            id: this.maxId++,
+        }
+        this.setState(({ data }) => {
+            const newArr = [...data, newItem];
+            return {
+                data: newArr
+            }
+        });
     }
 
     render() {
