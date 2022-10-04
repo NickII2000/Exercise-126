@@ -89,10 +89,14 @@ class App extends Component {
 
 
     deleteItem = (id) => {
-        console.log(id);
+        // console.log(id);
         this.setState(({ data }) => {
             const index = data.findIndex(elem => elem.id === id);
-            console.log(index);
+            // console.log(index);
+            data.splice(index, 1);
+            return {
+                data: data
+            };
         });
 
     }
