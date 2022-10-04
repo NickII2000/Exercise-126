@@ -80,11 +80,11 @@ class App extends Component {
         super(props);
         this.state = {
             data: [
-                { name: "John C.", salary: 80000, id: 1 },
-                { name: "Alex M.", salary: 100000, id: 2 },
-                { name: "Carl W.", salary: 120000, id: 3 },
-                { name: "Uma T.", salary: 150000, id: 4 },
-                { name: "Ivan P.", salary: 70000, id: 5 }
+                { name: "John C.", salary: 80000, increase: false, rise: true, id: 1 },
+                { name: "Alex M.", salary: 100000, increase: true, rise: false, id: 2 },
+                { name: "Carl W.", salary: 120000, increase: false, rise: false, id: 3 },
+                { name: "Uma T.", salary: 150000, increase: false, rise: false, id: 4 },
+                { name: "Ivan P.", salary: 70000, increase: false, rise: false, id: 5 }
             ]
         }
         const { data } = this.state;
