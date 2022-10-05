@@ -52,9 +52,7 @@ class App extends Component {
 
     onToggleIncrease = (id) => {
         this.setState(({ data }) => ({
-            data: data.map(item => {
-                return (item.id === id) ? { ...item, increase: !item.increase } : item;
-            })
+            data: data.map(item => (item.id === id) ? { ...item, increase: !item.increase } : item)
         }));
     }
 
