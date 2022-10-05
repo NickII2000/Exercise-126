@@ -7,10 +7,6 @@ const Employeeslist = ({ data, onDelete, onToggleIncrease, onToggleRise }) => {
     const elements = data.map(item => {
         const { id, ...itemProps } = item;
 
-        // console.log(`id = ${id}`);
-        // console.log(itemProps);
-        // console.log({ ...itemProps });
-
         return (
             <EmployeesListItem
                 key={id}
@@ -18,7 +14,6 @@ const Employeeslist = ({ data, onDelete, onToggleIncrease, onToggleRise }) => {
                 onDelete={() => onDelete(id)}
                 onToggleIncrease={() => onToggleIncrease(id)}
                 onToggleRise={() => onToggleRise(id)} />
-            // onDelete={() => console.log(`id#${id} - Deleted`)} />
         );
     });
 
