@@ -144,10 +144,12 @@ class App extends Component {
         // });
         this.setState(({ data }) => ({
             data: data.map(item => {
-                if (item.id === id) {
-                    return { ...item, increase: !item.increase }
-                }
-                return item;
+                // if (item.id === id) {
+                //     return { ...item, increase: !item.increase }
+                // }
+                // return item;
+
+                return (item.id === id) ? { ...item, increase: !item.increase } : item;
             })
         }));
     }
