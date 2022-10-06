@@ -18,7 +18,8 @@ class App extends Component {
                 { name: "Carl W.", salary: 120000, increase: false, rise: false, id: 3 },
                 { name: "Uma T.", salary: 150000, increase: false, rise: false, id: 4 },
                 { name: "Ivan P.", salary: 70000, increase: false, rise: false, id: 5 }
-            ]
+            ],
+            term: ''
         }
         const { data } = this.state;
         this.maxId = data.map(item => item.id).reduce((a, b) => a > b ? a : b) + 1;
@@ -57,6 +58,7 @@ class App extends Component {
     }
 
     render() {
+        const { data, term } = this.term;
         const employees = this.state.data.length;
         const increased = this.state.data.filter(item => item.increase).length;
         const rised = this.state.data.filter(item => item.rise).length;
@@ -70,7 +72,7 @@ class App extends Component {
                 </div>
 
                 <Employeeslist
-                    data={this.state.data}
+                    data={data}
                     onDelete={this.deleteItem}
                     onToggleProp={this.onToggleProp} />
                 <EmployeesAddForm onAdd={this.addItem} />
