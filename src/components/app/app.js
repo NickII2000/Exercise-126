@@ -1,4 +1,4 @@
-import { Component, Fragment } from 'react';
+import { Component } from 'react';
 
 // import AppInfo from '../app-info/app-info';
 // import SearchPanel from '../search-panel/search-panel';
@@ -7,6 +7,8 @@ import { Component, Fragment } from 'react';
 // import EmployeesAddForm from '../employees-add-form/employees-add-form';
 
 import './app.css';
+
+// import { Component, Fragment } from 'react';
 
 class WhoAmI extends Component {
     constructor(props) {
