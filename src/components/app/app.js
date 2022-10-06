@@ -67,6 +67,10 @@ class App extends Component {
         });
     }
 
+    onUpdateSearh = (term) => {
+        this.setState({ term });
+    }
+
     render() {
         const { data, term } = this.state;
         const employees = this.state.data.length;
