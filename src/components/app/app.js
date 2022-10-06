@@ -19,7 +19,7 @@ class App extends Component {
                 { name: "Uma T.", salary: 150000, increase: false, rise: false, id: 4 },
                 { name: "Ivan P.", salary: 70000, increase: false, rise: false, id: 5 }
             ],
-            term: ''
+            term: 'J'
         }
         const { data } = this.state;
         this.maxId = data.map(item => item.id).reduce((a, b) => a > b ? a : b) + 1;
@@ -57,10 +57,22 @@ class App extends Component {
         }));
     }
 
+    searchEmp = (items, term) => {
+        if (term.length === 0) {
+            return items;
+        }
+
+        return items.filter(item => {
+            return item.name.indexOf(term) > -1;
+        });
+    }
+
     render() {
         const { data, term } = this.term;
         const employees = this.state.data.length;
         const increased = this.state.data.filter(item => item.increase).length;
+        const visibleData = this.searchEmp(data, term);
+
         const rised = this.state.data.filter(item => item.rise).length;
         return (
             <div className="app" >
