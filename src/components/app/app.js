@@ -19,7 +19,8 @@ class App extends Component {
                 { name: "Uma T.", salary: 150000, increase: false, rise: false, id: 4 },
                 { name: "Ivan P.", salary: 70000, increase: false, rise: false, id: 5 }
             ],
-            term: ''
+            term: '',
+            filter: ''
         }
         const { data } = this.state;
         this.maxId = data.map(item => item.id).reduce((a, b) => a > b ? a : b) + 1;
@@ -71,8 +72,18 @@ class App extends Component {
         this.setState({ term });
     }
 
+    filterPost = (items, filter) => {
+        switch (filter) {
+            case 'rise':
+                return items.filter(item => item.rise);
+            case 'moreThan100000':
+                return items.filter(item => item.salary >= 100000);
+
+        }
+    }
+
     render() {
-        const { data, term } = this.state;
+        const { data, term, filter } = this.state;
         const employees = this.state.data.length;
         const increased = this.state.data.filter(item => item.increase).length;
         const visibleData = this.searchEmp(data, term);
