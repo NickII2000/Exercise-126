@@ -20,7 +20,7 @@ class App extends Component {
                 { name: "Ivan P.", salary: 70000, increase: false, rise: false, id: 5 }
             ],
             term: '',
-            filter: ''
+            filter: 'all'
         }
         const { data } = this.state;
         this.maxId = data.map(item => item.id).reduce((a, b) => a > b ? a : b) + 1;
@@ -76,7 +76,9 @@ class App extends Component {
         switch (filter) {
             case 'rise':
                 return items.filter(item => item.rise);
-            case 'moreThan100000':
+            case 'increase':
+                return items.filter(item => item.increase);
+            case 'from100000':
                 return items.filter(item => item.salary >= 100000);
             default:
                 return items;
@@ -96,7 +98,7 @@ class App extends Component {
 
                 <div className="search-panel">
                     <SearchPanel onUpdateSearh={this.onUpdateSearh} />
-                    <AppFilter />
+                    <AppFilter filter={filter} />
                 </div>
 
                 <Employeeslist
