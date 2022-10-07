@@ -85,6 +85,10 @@ class App extends Component {
         }
     }
 
+    onFilterSelect = () => {
+        this.setState({ filter });
+    }
+
     render() {
         const { data, term, filter } = this.state;
         const employees = this.state.data.length;
