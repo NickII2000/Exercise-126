@@ -19,7 +19,7 @@ class App extends Component {
                 { name: "Uma T.", salary: 150000, increase: false, rise: false, id: 4 },
                 { name: "Ivan P.", salary: 70000, increase: false, rise: false, id: 5 }
             ],
-            term: 'a'
+            term: ''
         }
         const { data } = this.state;
         this.maxId = data.map(item => item.id).reduce((a, b) => a > b ? a : b) + 1;
@@ -83,7 +83,7 @@ class App extends Component {
                 <AppInfo employees={employees} increased={increased} rised={rised} />
 
                 <div className="search-panel">
-                    <SearchPanel />
+                    <SearchPanel onUpdateSearh={this.onUpdateSearh} />
                     <AppFilter />
                 </div>
 

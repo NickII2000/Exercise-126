@@ -8,12 +8,21 @@ class SearchPanel extends Component {
             term: ''
         }
     }
+
+    onUpdateSearh = (e) => {
+        const term = e.target.value;
+        this.setState({ term });
+        this.props.onUpdateSearh(term);
+    }
+
     render() {
         return (
             <input
                 type="text"
                 className="form-control search-input"
-                placeholder="Найти сотрудника" />
+                placeholder="Найти сотрудника"
+                value={this.state.term}
+                onChange={this.onUpdateSearh} />
         );
 
     }
