@@ -34,7 +34,7 @@ class App extends Component {
 
     }
 
-    // Да, пока могут добавляться пустые пользователи. Мы это еще исправим
+    // Да, пока могут добавляться пустые пользователи. Мы это еще исправим (исправлено в employees-add-form.js в методе onSubmit)
     addItem = (name, salary) => {
         const newItem = {
             name,
@@ -62,9 +62,7 @@ class App extends Component {
             return items;
         }
 
-        return items.filter(item => {
-            return item.name.indexOf(term) > -1;
-        });
+        return items.filter(item => item.name.indexOf(term) > -1);
     }
 
     onUpdateSearh = (term) => {
