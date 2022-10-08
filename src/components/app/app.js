@@ -20,7 +20,7 @@ class App extends Component {
                 { name: "Ivan P.", salary: 70000, increase: false, rise: true, id: 5 }
             ],
             term: '',
-            filter: 'rise'
+            filter: 'all'
         }
         const { data } = this.state;
         this.maxId = data.map(item => item.id).reduce((a, b) => a > b ? a : b) + 1;
