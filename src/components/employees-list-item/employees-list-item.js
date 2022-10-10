@@ -17,7 +17,7 @@ const EmployeesListItem = (props) => {
             <span className="list-group-item-label"
                 onClick={onToggleProp}
                 data-toggle="rise"
-                style={{ fontSize: '4em' }}>{name}</span>
+                style={{ fontSize: '40px', color: 'red' }}>{name}</span>
             <input type="text" className="list-group-item-input" defaultValue={salary + ' руб.'} />
             <div className='d-flex justify-content-center align-items-center'>
                 <button type="button"
