@@ -17,7 +17,7 @@ const EmpItem = styled.div`
     a {
         display: block;
         margin: 10px 0 10px 0;
-        color: ${props => props.active ? 'red' : 'blue'};
+        color: ${props => props.active ? 'red' : 'pink'};
     }
     input {
         display: block;
