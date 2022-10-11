@@ -9,7 +9,7 @@ import styled from 'styled-components';
 
 import './app.css';
 
-const EmpItem = Styled.div`
+const EmpItem = styled.div`
     padding: 20px;
     margin-bottom: 15px;
     border-radius: 5px;
@@ -48,8 +48,7 @@ class WhoAmI extends Component {
         // console.log(this);
 
         return (
-            <>
-                {/* <button onClick={() => this.nextYear()}>{text}</button> */}
+            <EmpItem>
                 <button onClick={this.nextYear}>{text}</button>
                 <h1>My name is {name}, surname - {surname},
                     age - {years},
@@ -60,7 +59,7 @@ class WhoAmI extends Component {
                     <input type="text" onChange={(e) => this.commitInputChanges(e, 'some color')} />
 
                 </form>
-            </>
+            </EmpItem>
         );
     }
 }
