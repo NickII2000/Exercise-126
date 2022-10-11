@@ -20,6 +20,14 @@ const Header = styled.h2`
     font-size: 24px;
 `;
 
+const Button = styled.button`
+    display: block;
+    padding: 5px 15px;
+    background-color: gold;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+`;
+
 class WhoAmI extends Component {
     constructor(props) {
         super(props);
@@ -53,7 +61,7 @@ class WhoAmI extends Component {
 
         return (
             <EmpItem>
-                <button onClick={this.nextYear}>{text}</button>
+                <Button onClick={this.nextYear}>{text}</Button>
                 <Header>My name is {name}, surname - {surname},
                     age - {years},
                     position - {position}</Header>
