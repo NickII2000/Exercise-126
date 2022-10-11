@@ -6,7 +6,7 @@ import styled from 'styled-components';
 import { Button } from './components/app/app';
 
 import './index.scss';
-const BigButton = styled('Button')`
+const BigButton = styled(Button)`
   margin: 0 auto;
   width: 245px;
 `;
