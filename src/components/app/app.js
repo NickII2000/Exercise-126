@@ -17,7 +17,7 @@ const EmpItem = styled.div`
 `;
 
 const Header = styled.h2`
-    font-size: 22px;
+    font-size: 24px;
 `;
 
 class WhoAmI extends Component {
