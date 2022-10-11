@@ -17,7 +17,7 @@ const AppFilter = (props) => {
                 className={`btn ${clazz}`}
                 key={name}
                 onClick={() => props.onFilterSelect(name)}
-                style={colored ? { color: 'Cyan' } : null}>
+                style={colored ? { color: 'Aquamarine' } : null}>
                 {label}
             </button >
         )
