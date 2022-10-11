@@ -8,7 +8,7 @@ import { Button } from './components/app/app';
 import './index.scss';
 const BigButton = styled(Button)`
   margin: 0 auto;
-  width: 345px;
+  width: 545px;
 `;
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
