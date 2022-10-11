@@ -11,13 +11,14 @@ const AppFilter = (props) => {
     const buttons = buttonsData.map(({ name, label, colored }) => {
         const active = props.filter === name;
         const clazz = active ? 'btn-light' : 'btn-outline-light';
+        const style = colored ? { color: 'Aquamarine' } : null;
         return (
             <button
                 type="button"
                 className={`btn ${clazz}`}
                 key={name}
                 onClick={() => props.onFilterSelect(name)}
-                style={colored ? { color: 'Aquamarine' } : null}>
+                style={style}>
                 {label}
             </button >
         )
