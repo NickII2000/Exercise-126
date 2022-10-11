@@ -18,6 +18,6 @@ root.render(
     <App />
     <Button>Дополнительная кнопка</Button>
     <BigButton>Большая кнопка</BigButton>
-    <BigButton as="h1">Заголовок h1</BigButton>
+    <BigButton as="a">Ссылка тег a</BigButton>
   </React.StrictMode >
 );
