@@ -20,7 +20,7 @@ const Header = styled.h2`
     font-size: 24px;
 `;
 
-const Button = styled.button`
+export const Button = styled.button`
     display: block;
     padding: 5px 15px;
     background-color: gold;
