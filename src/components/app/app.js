@@ -16,6 +16,10 @@ const EmpItem = styled.div`
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
 `;
 
+const Header = styled.h2`
+    font-size: 22px;
+`;
+
 class WhoAmI extends Component {
     constructor(props) {
         super(props);
@@ -50,9 +54,9 @@ class WhoAmI extends Component {
         return (
             <EmpItem>
                 <button onClick={this.nextYear}>{text}</button>
-                <h1>My name is {name}, surname - {surname},
+                <Header>My name is {name}, surname - {surname},
                     age - {years},
-                    position - {position}</h1>
+                    position - {position}</Header>
                 <a href={link}>My profile</a>
                 <form>
                     <span>Введите должность</span>
