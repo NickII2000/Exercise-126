@@ -17,7 +17,7 @@ const EmpItem = styled.div`
     a {
         diplay: block;
         margin: 10px 0 10px 0;
-        color: aquamarine;
+        color: pink;
     }
     input {
         display: block;
