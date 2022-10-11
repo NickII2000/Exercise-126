@@ -9,6 +9,7 @@ import './index.scss';
 const BigButton = styled(Button)`
   margin: 0 auto;
   width: 545px;
+  text-align: center;
 `;
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -17,5 +18,6 @@ root.render(
     <App />
     <Button>Дополнительная кнопка</Button>
     <BigButton>Большая кнопка</BigButton>
-  </React.StrictMode>
+    <BigButton as="h1">Заголовок h1</BigButton>
+  </React.StrictMode >
 );
