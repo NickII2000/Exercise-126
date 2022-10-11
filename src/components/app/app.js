@@ -15,9 +15,9 @@ const EmpItem = styled.div`
     border-radius: 5px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
     a {
-        diplay: block;
+        display: block;
         margin: 10px 0 10px 0;
-        color: ${props => props.active ? 'orange' : 'black'};
+        color: ${props => props.active ? 'red' : 'blue'};
     }
     input {
         display: block;
