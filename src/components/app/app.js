@@ -1,4 +1,5 @@
 import { Component } from 'react';
+import styled from 'styled-components';
 
 // import AppInfo from '../app-info/app-info';
 // import SearchPanel from '../search-panel/search-panel';
@@ -8,6 +9,13 @@ import { Component } from 'react';
 
 import './app.css';
 
+const EmpItem = Styled.div`
+    padding: 20px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+`;
+
 class WhoAmI extends Component {
     constructor(props) {
         super(props);
@@ -16,15 +24,9 @@ class WhoAmI extends Component {
             text: 'Нажато: ',
             position: '',
         }
-        // this.nextYear = this.nextYear.bind(this);
     }
 
-    // nextYear() {
     nextYear = () => {
-        // console.log('+++');
-        // this.setState({
-        //     years: this.state.years + 1,
-        // });
         this.setState(state => ({
             years: this.state.years + 1,
             text: this.state.text + '+ ',
@@ -63,12 +65,17 @@ class WhoAmI extends Component {
     }
 }
 
+const Wrapper = styled.div`
+    width: 600px;
+    margin: 80px auto 0 auto;
+`;
+
 function App() {
     return (
-        <div className="app">
+        <Wrapper>
             <WhoAmI name='John' surname="Smith" link="ok.ru" />
             <WhoAmI name='Alex' surname="Shepard" link="vk.ru" />
-        </div>
+        </Wrapper>
 
     );
 }
