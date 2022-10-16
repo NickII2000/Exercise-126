@@ -2,7 +2,7 @@ import { Container, Row, Col, Carousel, Form, Button } from "react-bootstrap";
 
 const BootstrapTest = () => {
     return (
-        <Container>
+        <Container className="mt-5 mb-5">
             <Row>
                 <Col>
                     <Form>
