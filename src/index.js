@@ -24,6 +24,6 @@ root.render(
     <Button>Дополнительная кнопка</Button>
     <BigButton>Большая кнопка</BigButton>
     <BigButton as="a">Ссылка тег a</BigButton>
-    <BootstrapTest />,
+    <BootstrapTest />
   </React.StrictMode >
 );
