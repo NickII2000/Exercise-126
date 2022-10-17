@@ -25,7 +25,7 @@ const EmpItem = styled.div`
     }
 `;
 
-const Header = styled.h2`}
+const Header = styled.h2`
     font-size: 24px;
 `;
 
