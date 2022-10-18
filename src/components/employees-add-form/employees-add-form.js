@@ -35,7 +35,7 @@ class EmployeesAddForm extends Component {
     }
 
     static onLog = () => {
-        console.log('Hey! This is onLog!');
+        console.log('Hey! This is "onLog"!');
     }
 
     render() {
