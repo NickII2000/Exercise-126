@@ -1,9 +1,14 @@
-import { Container, Row, Col, Carousel, Form, Button } from "react-bootstrap";
+import { Container, Row, Col, Carousel, Form, Button, Spinner } from "react-bootstrap";
 
 const BootstrapTest = () => {
     return (
         <Container className="mt-5 mb-5">
             <Row>
+                <Col>
+                    <Spinner animation="border" role="status">
+                        <span className="visually-hidden">Loading...</span>
+                    </Spinner>
+                </Col>
                 <Col>
                     <Form>
                         <Form.Group className="mb-3" controlId="formBasicEmail">
