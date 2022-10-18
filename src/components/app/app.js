@@ -55,7 +55,7 @@ class WhoAmI extends Component {
     }
 
     commitInputChanges = (e, color) => {
-        console.log(e.target.value);
+        // console.log(e.target.value);
         console.log(color);
         this.setState({
             position: e.target.value
@@ -66,7 +66,7 @@ class WhoAmI extends Component {
         const { name, surname, link } = this.props;
         const { years, text, position } = this.state;
 
-        console.log(this);
+        // console.log(this);
 
         return (
             <EmpItem active>
