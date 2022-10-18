@@ -34,6 +34,10 @@ class EmployeesAddForm extends Component {
         })
     }
 
+    static onLog = () => {
+        console.log('Hey! This is onLog!');
+    }
+
     render() {
         const { name, salary } = this.state;
 
@@ -63,5 +67,7 @@ class EmployeesAddForm extends Component {
         );
     }
 }
+
+EmployeesAddForm.onLog();
 
 export default EmployeesAddForm;
