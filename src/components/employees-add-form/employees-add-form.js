@@ -70,7 +70,7 @@ class EmployeesAddForm extends Component {
     }
 }
 
-// EmployeesAddForm.onLog();
-// console.log(EmployeesAddForm.logged);
+EmployeesAddForm.onLog();
+console.log(EmployeesAddForm.logged);
 
 export default EmployeesAddForm;
