@@ -38,7 +38,7 @@ class EmployeesAddForm extends Component {
         console.log('Hey! This is "onLog"!!!');
     }
 
-    static logged = 'off';
+    static logged = 'on/off';
 
     render() {
         const { name, salary } = this.state;
