@@ -155,9 +155,12 @@ class App extends Component {
             return items;
         }
 
-        return items.filter(item => {
-            return item.name.indexOf(term) > -1;
-        });
+        // return items.filter(item => {
+        //     return item.name.indexOf(term) > -1;
+        // });
+
+        return items.filter(item => item.name.indexOf(term) > -1);
+
     }
 
     onUpdateSearh = (term) => {
