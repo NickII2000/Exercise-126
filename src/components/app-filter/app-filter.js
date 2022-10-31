@@ -8,6 +8,7 @@ const AppFilter = (props) => {
         { name: 'from100000', label: 'Зарплата от 100 000 руб. и выше', colored: true }
     ]
 
+    console.log(props);
     const buttons = buttonsData.map(({ name, label, colored }) => {
         const active = props.filter === name;
         const clazz = active ? 'btn-light' : 'btn-outline-light';
