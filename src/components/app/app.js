@@ -214,9 +214,9 @@
 
 import React, { Component } from 'react';
 import styled from 'styled-components';
-import BootstrapTest from './BootstrapTest';
+import BootstrapTest from '../../BootstrapTest';
 
-import './App.css';
+import './app.css';
 
 const EmpItem = styled.div`
     padding: 20px;
@@ -295,7 +295,7 @@ const Wrapper = styled.div`
 
 const DynamicGreating = (props) => {
     return (
-        <div className={'mb-3 p-3 border-' + props.color}>
+        <div className={'mb-3 p-3 border ' + props.color}>
             {
                 /* {props.children} */
                 React.Children.map(props.children, child => {
@@ -313,6 +313,7 @@ function App() {
             <DynamicGreating color={'primary'}>
                 <h2>This weel was hard.</h2>
                 <h2>Hello world!</h2>
+                <h2>It is OK!</h2>
             </DynamicGreating>
 
             <WhoAmI name='John' surname="Smith" link="ok.ru" />

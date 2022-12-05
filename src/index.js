@@ -32,8 +32,8 @@
 import React, { StrictMode } from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
-import { Button } from './App';
+import App from './components/app/app';
+import { Button } from './components/app/app';
 import styled from 'styled-components';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
