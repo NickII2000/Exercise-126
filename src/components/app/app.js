@@ -310,11 +310,21 @@ const DynamicGreating = (props) => {
 function App() {
     return (
         <Wrapper>
-            <DynamicGreating color={'primary'}>
-                <h2>This weel was hard.</h2>
-                <h2>Hello world!</h2>
-                <h2>It is OK!</h2>
-            </DynamicGreating>
+
+            <BootstrapTest
+                left={
+                    <DynamicGreating color={'primary'}>
+                        <h2>This weel was hard.</h2>
+                        <h2>Hello world!</h2>
+                        <h2>It is OK!</h2>
+                    </DynamicGreating>
+                }
+                right={
+                    <DynamicGreating color={'primary'}>
+                        <h2>RIGHT!</h2>
+                    </DynamicGreating>
+                }
+            />
 
             <WhoAmI name='John' surname="Smith" link="ok.ru" />
             <WhoAmI name='Alex' surname="Shepard" link="vk.ru" />
