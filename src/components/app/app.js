@@ -342,7 +342,7 @@ class Counter extends Component {
                     onClick={this.changeCounter}>
                     Click me
                 </button >
-
+                {this.props.render(this.state.counter)}
             </>
         )
     }
@@ -352,7 +352,10 @@ function App() {
     return (
         <Wrapper>
             <Counter render={counter => (
-                <Message />
+                <Message counter={counter} />
+            )} />
+            <Counter render={counter => (
+                <Message counter={counter} />
             )} />
 
             <HelloGreating />
