@@ -5,9 +5,9 @@ import './app.css';
 class Form extends Component {
     myRef = React.createRef();
 
-    // componentDidMount() {
-    //     this.myRef.current.focus();
-    // }
+    componentDidMount() {
+        this.myRef.current.focus();
+    }
 
     focusFirstTI = () => {
         this.myRef.current.focus();
