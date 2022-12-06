@@ -3,7 +3,6 @@ import { Container } from 'react-bootstrap';
 import './app.css';
 
 class Form extends Component {
-
     myRef = React.createRef();
 
     componentDidMount() {
