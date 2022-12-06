@@ -14,11 +14,11 @@ class Form extends Component {
 
     render() {
         return (
-            <Container ref={this.myRef} >
+            <Container>
                 <form className="w-50 border mt-5 p-3 m-auto">
                     <div className="mb-3">
                         <label htmlFor="exampleFormControlInput1" className="form-label">Email address</label>
-                        <input type="email" className="form-control" id="exampleFormControlInput1" placeholder="name@example.com" />
+                        <input ref={this.myRef} type="email" className="form-control" id="exampleFormControlInput1" placeholder="name@example.com" />
                     </div>
                     <div className="mb-3">
                         <label htmlFor="exampleFormControlTextarea1" className="form-label">Example textarea</label>
