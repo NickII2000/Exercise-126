@@ -3,10 +3,8 @@ import { Container } from 'react-bootstrap';
 import './app.css';
 
 class Form extends Component {
-    constructor(props) {
-        super(props);
-        this.myRef = React.createRef();
-    }
+
+    myRef = React.createRef();
 
     componentDidMount() {
         this.myRef.current.focus();
