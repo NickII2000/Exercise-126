@@ -16,7 +16,7 @@ class Form extends Component {
     focusFirstTI = () => {
         if (this.myRef) {
             this.myRef.focus();
-            // console.log('Focus');
+            console.log('Focus');
         }
     }
 
