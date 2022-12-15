@@ -8,6 +8,9 @@ class Form extends Component {
         advOpen: false
     }
 
+    componentDidMount() {
+        setTimeout(this.handleClick, 2000);
+    }
 
     handleClick = () => {
         console.log('click');
