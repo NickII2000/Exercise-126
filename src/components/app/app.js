@@ -45,8 +45,8 @@ const Msg = () => {
                 'height': '150px',
                 'backgroundColor': 'red',
                 'position': 'absolute',
-                'right': '-50%',
-                'bottom': '-50%'
+                'right': '0',
+                'bottom': '0'
             }}>
             Hello
         </div>
