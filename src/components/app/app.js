@@ -28,6 +28,10 @@ class Form extends Component {
     }
 }
 
+const Portal = () => {
+    return ReacDOM.createPortal();
+}
+
 const Msg = () => {
     return (
         <div
