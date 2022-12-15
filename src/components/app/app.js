@@ -21,15 +21,20 @@ class Form extends Component {
                         <label htmlFor="exampleFormControlTextarea1" className="form-label">Example textarea</label>
                         <textarea className="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                     </div>
-
+                    <Portal>
+                        <Msg />
+                    </Portal>
                 </form>
             </Container>
         )
     }
 }
 
-const Portal = () => {
-    return ReacDOM.createPortal();
+const Portal = (props) => {
+    const node = document.createElement('div');
+    document.body.append(node);
+
+    return ReactDOM.createPortal(props.children, node);
 }
 
 const Msg = () => {
