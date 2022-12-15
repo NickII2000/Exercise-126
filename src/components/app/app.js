@@ -5,6 +5,10 @@ import './App.css';
 
 class Form extends Component {
 
+    handleClick = () => {
+        console.log('click');
+    }
+
     render() {
         return (
             <Container>
