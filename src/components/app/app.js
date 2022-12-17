@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import { Container } from 'react-bootstrap';
-import './app.css';
+// import './app.css';
 
 class Form extends Component {
     state = {
