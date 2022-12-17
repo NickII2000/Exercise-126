@@ -66,7 +66,7 @@ const Msg = () => {
                 'right': '0',
                 'bottom': '0'
             }}>
-            Hello
+            Hello, friends!
         </div>
     )
 }
