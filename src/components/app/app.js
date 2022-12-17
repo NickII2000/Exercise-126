@@ -61,7 +61,7 @@ const Msg = () => {
             style={{
                 'width': '500px',
                 'height': '150px',
-                'backgroundColor': 'red',
+                'backgroundColor': 'pink',
                 'position': 'absolute',
                 'right': '0',
                 'bottom': '0'
